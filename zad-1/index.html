@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <input type="range" min="10" max="500" value="250" id="slider">
+    <div id="circle">
+        <div id="diameter"></div>
+    </div>
+    
+    <script>
+        const slider = document.getElementById('slider');
+        const circle = document.getElementById('circle');
+        const diameterDisplay = document.getElementById('diameter');
+    
+        slider.addEventListener('input', () => {
+            const diameter = slider.value;
+            circle.style.width = diameter + 'px';
+            circle.style.height = diameter + 'px';
+            diameterDisplay.textContent = diameter;
+        });
+    
+        diameterDisplay.textContent = slider.value;
+    </script>
+
+</body>
+</html>
