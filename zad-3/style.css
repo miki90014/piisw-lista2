@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.form-container{
+    width: 60%;
+}
+.notes-container {
+    width: 30%;
+}
+
+.form-group {
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+li:hover {
+    background-color: #f0f0f0;
+}
